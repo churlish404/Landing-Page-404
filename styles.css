@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100%;
+    min-height: 100vh;
+}
+a, 
+h4 {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.header-logo{
+    font-size: 24px;
+    color: #e8f0e0;
+}
+header,
+footer {
+    background: #1F2937;
+    color: white;
+}
+h1{
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+}
+
+button {
+    color: #3882F6;
+}
+.content{
+    background-color:#3882F6; 
+}
