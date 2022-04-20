@@ -1,38 +1,141 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
+
 
 body {
     font-family: sans-serif;
-    width: 100%;
-    min-height: 100vh;
 }
 a, 
 h4 {
     text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
+    order: 3;
 }
-.header-logo{
+li,
+a {
+    display:inline;  /* as ul is a block level element have to state inline */ 
+} 
+
+li{
+    order: 1;
+    gap: 8px;
+    margin-left: 20px;
+}
+h3{
     font-size: 24px;
     color: #e8f0e0;
 }
+
 header,
 footer {
     background: #1F2937;
     color: white;
 }
+
+header {
+    height: 60vh;
+    width: auto;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 h1{
     font-size: 48px;
     font-weight: extra-bold;
     color: #F9FAF8;
+    order: 2;
 }
-
+ul{
+    list-style-type: none;
+    margin-left: 400px;
+    padding: 18px;
+}
 button {
-    color: #3882F6;
+    font-weight: bold;
+    background-color: #3882F6;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+}
+img{
+   min-width: 0;
+    max-width: 100%;
+   max-height: 100%;
+   margin: 0;
+   border: thick, white;
+   order: 5;
+   align-self: flex-start;
 }
 .content{
     background-color:#3882F6; 
+}
+.Header-Signup-Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    width: 130px;
+    order:4;
+    margin-top: 16px;
+    font-size: 18px;
+}
+.header-logo {
+    order: 0;
+    padding: 8px;
+    margin-left: 60px;
+}
+.Hero-Wrapper{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.image-wrapper {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    border: white, thick;
+    order: 5;
+}
+img {
+    width: 100%;
+}
+.random-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.info-section {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+#info-header {
+        color: #1f2937;
+        font-size: 36px;
+        font-weight: extra-bold;  
+        text-align: center;
+        margin-top: 20px;
+}
+.tiles-container {
+    display: flex;
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    gap: 20px;
+    justify-content: center;
+}
+.tile {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    border: 5px solid blue;
 }
