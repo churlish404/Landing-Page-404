@@ -1,11 +1,22 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
+}
+.section {
+    margin-top: 10em;
 }
 
 
 body {
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+main {
+    display: flex;
+    flex-direction: column;
 }
 a, 
 h4 {
@@ -20,7 +31,6 @@ a {
 } 
 
 li{
-    order: 1;
     gap: 8px;
     margin-left: 20px;
 }
@@ -30,31 +40,30 @@ h3{
 }
 
 header,
-footer {
+footer,
+.Hero_with_pic_container {
     background: #1F2937;
     color: white;
 }
 
 header {
-    height: 60vh;
+    height: 20vh;
     width: auto;
     padding: 8px;
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 h1{
     font-size: 48px;
     font-weight: extra-bold;
     color: #F9FAF8;
-    order: 2;
 }
 ul{
     list-style-type: none;
     margin-left: 400px;
     padding: 18px;
+    flex: 1;
 }
 button {
     font-weight: bold;
@@ -65,12 +74,11 @@ button {
 }
 img{
    min-width: 0;
-    max-width: 100%;
+   max-width: 100%;
    max-height: 100%;
    margin: 0;
    border: thick, white;
    order: 5;
-   align-self: flex-start;
 }
 .content{
     background-color:#3882F6; 
@@ -86,31 +94,24 @@ img{
     font-size: 18px;
 }
 .header-logo {
-    order: 0;
     padding: 8px;
-    margin-left: 60px;
 }
-.Hero-Wrapper{
-    width: 400px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-}
-.image-wrapper {
-    width: 300px;
-    height: 300px;
-    position: fixed;
-    border: white, thick;
-    order: 5;
-}
-img {
-    width: 100%;
-}
-.random-info {
+
+.Hero-section {
+    height: auto;
     flex: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+img {
+    width: 20%;
+    position: absolute;
+    top: 50em;
+    right: 50em;
+    
 }
 .info-section {
     display: flex;
@@ -129,13 +130,14 @@ img {
     flex: 1;
     margin: 10px;
     padding: 10px;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
 }
 .tile {
     display: flex;
     flex-direction: column;
-    width: 50px;
-    height: 50px;
-    border: 5px solid blue;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #3882F6;
+    border-radius: 10%;
 }
