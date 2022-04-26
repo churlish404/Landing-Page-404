@@ -7,22 +7,32 @@
 body {
     font-family: sans-serif;
     width: 100%;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
 a, 
 h4 {
     text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
 }
+    
 .header-logo{
     font-size: 24px;
     color: #e8f0e0;
 }
+.section {
+    margin: 5em;
+    display: flex;
+}
+
 header,
-footer {
+footer,
+.Hero {
     background: #1F2937;
     color: white;
+    display: flex;
 }
 h1{
     font-size: 48px;
@@ -30,9 +40,14 @@ h1{
     color: #F9FAF8;
 }
 
-button {
+button,
+.content {
     color: #3882F6;
 }
-.content{
-    background-color:#3882F6; 
-}
+
+
+
+
+
+
+
