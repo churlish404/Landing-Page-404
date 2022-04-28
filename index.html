@@ -9,56 +9,66 @@
 </head>
 <body>
             <header> 
-                <h3> Header Logo </h3>
+                <h3 class="Header-Logo"> Header Logo </h3>
+                <nav id="navbar">
                 <ul> 
-                    <li> <a href=""> Header link one</a> </li>
-                    <li> <a href=""> Header link two</a> </li>
-                    <li> <a href=""> Header link three</a> </li>
+                    <li> <a href=""> Home </a> </li>
+                    <li> <a href=""> About</a> </li>
+                    <li> <a href=""> Info </a> </li>
                 </ul>
+                </nav>
             </header>
             
             <main>
-                <div class="Hero section">
-                    <h1> This website is awesome</h1>
-                    <h4>This website has some subtext that goes here under the main title. It's smaller font and the color is lower contrast</h4>
-                    <button class="Header-Signup-Button"></button>
-                    <img src="otter" alt="otter">
+                <div class="Hero-section">
+                    <div class="hero-text-wrapper">
+                        <h1> This website is functional until you resize</h1>
+                        <h4> needs some work lol</h4>
+                        <button class="Header-Signup-Button"> Sign Up </button>
+                    </div>
+                        <img class="Hero-image" src="otter.jpeg" alt="otter">
+                    
                 </div>
 
 
                 <article class="Info section">
-                    <h2> Some Random Information</h2>
-                    <div class="tile">
-                        <img class="hero-image" src="" alt="image 1">
-                        <p> this is some subtext under image </p>
-                    </div>
-                    
-                    <div class="tile">
-                        <img src="" alt="image 2">
-                        <p>this is some subtext under image </p>
-                    </div>
+                    <h2> Doggos </h2>
+                    <div class="tile-wrapper">
+                        <div class="tile">
+                            <img class="info-image" src="sausage.jpeg" alt="image 1">
+                            <span class="caption"> sausage dogs are hilarious </span>
+                        </div>
+                        
+                        <div class="tile">
+                            <img class="info-image" src="pug.jpeg" alt="image 1">
+                            <span class="caption"> naughty boy </span>
+                        </div>
 
-                    <div class="tile">
-                        <img src="" alt="image 3">
-                        <p>this is some subtext under image </p>
-                    </div>
+                        <div class="tile">
+                            <img class="info-image" src="aussie.jpeg" alt="image 1">
+                            <span class="caption"> good day mate </span>
+                        </div>
 
-                    <div class="tile">
-                        <img src="" alt="image 4">
-                        <p>this is some subtext under image </p>
+                        <div class="tile">
+                            <img class="info-image" src="irish.jpeg" alt="image 1">
+                            <span class="caption"> luck of the irish  </span>
+                        </div>
                     </div>
                 </article>
 
-                    <div class="Quote">
-                        <h2> This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All that I know is that it looks nice</h2>
-                        <p> <strong> Thor, God of Thunder </strong> </p>
+                    <div class="Quote section">
+                        <h2 class="Quote-body"> "This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All that I know is that it looks nice" <br></h2>
+                        <h3> -Thor, God of Thunder </h3>
                     </div> 
                     
                     <div class="Call-to-Action section">
-                        <div class="content">
-                        <p> Call to action it's time! Signup for our product by clicking that button, right over there! </p>
-                        <button> Sign Up </button>
+                        <div class="Call-to-Action-container">
+                        <h3> Call to action it's time! </h3> 
+                        <p> Signup for our product by clicking that button, right over there! </p>
+                        <div id="button-wrapper">
+                        <button class="CTA-btn"> Sign Up </button>
                         </div>
+                    </div>
                     </div>  
             </main>
             <footer>

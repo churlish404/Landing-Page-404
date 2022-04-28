@@ -3,51 +3,200 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html {
+    font-size: 16px; /* setting font size in parent element to allow use of rem measurements in child elements */
+}
 
 body {
     font-family: sans-serif;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* stacks sections of body on top of each other */
+
+}
+header {
+    display: flex; /* default flex direction is row */
+    justify-content: space-evenly; /* used to divide header elements evenly across page */
+    align-items: center; /* aligns header elements vertically */
+}
+
+.Header-Logo {
+    font-size: 24px;
+    color: #e8f0e0;
+    padding-left: 14.5rem;
+    padding-top: 1rem;
+    flex: 1; /* assigned element flex grow 1, flex shrink 1 flex basis 0 to use all available space horizontally across header */
+}
+
+#navbar a {
+    text-decoration:none; /* remove underline from links */
+    font-size:18px;
+    padding-right: 1rem;
+}
+#navbar li {
+    display: inline; /* puts all list items on same line. Need to add as are block elements by default */
+}
+
+ul {
+      padding-right: 6rem; 
+      padding-top: 1rem;
 }
 
 a, 
 h4 {
     text-decoration: none;
     font-size: 18px;
+    font-weight: 400;
     color: #E5E7EB;
 }
     
-.header-logo{
-    font-size: 24px;
-    color: #e8f0e0;
-}
 .section {
-    margin: 5em;
+    flex: 1;
     display: flex;
+    margin-top: 5rem;
 }
 
 header,
 footer,
-.Hero {
+.Hero-section {
     background: #1F2937;
     color: white;
     display: flex;
 }
-h1{
+h1 {
     font-size: 48px;
     font-weight: extra-bold;
     color: #F9FAF8;
+    width: 15rem;
+}
+
+h2 {
+    padding: 2rem;
 }
 
 button,
-.content {
-    color: #3882F6;
+.Call-to-Action-container
+{
+    background-color: #3882F6;
+    color: white;
 }
 
+.Hero-image {
+    float: right; /* sticky plaster method to align hero image to right of hero text */
+    padding: 2rem 5rem 2rem 5rem;
+    display: inline-block
+    height: 200px;
+}
 
+.Hero-section {
+    flex: 1;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: center;   
+}
 
+.hero-text-wrapper {
+    padding: 2rem 4rem 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    inline-size: min-content;
+}
 
+button { 
+    padding: 0.3rem;
+    display: inline-block;
+    width: 8rem;
+    border-radius: 8px;
+}
 
+.Info.section {
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
 
+.tile-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10rem;
+}
 
+.tile {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.info-image {
+    width: 200px;
+    height: 200px;
+    border: solid #3882F6; 8px;
+    border-radius: 8px;
+}
+
+.caption {
+    display: block;
+}
+
+.Quote-body {
+    font: italic lighter 36px sans-serif;
+    width: 50rem;
+}
+
+.Quote h3 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 22rem;
+    align-self: flex-end;
+}
+
+.section.Quote {
+    background-color: #E5E7EB;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section.Call-to-Action {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.Call-to-Action-container {
+    font: white;
+    width: 65rem;
+    height: 10rem;  
+    display: flex;
+    flex-direction: column;
+    background-color: #3882F6;
+    padding: 2em 2em 2em 2em;
+    border-radius: 8px;  
+}
+
+.CTA-btn {
+    border: solid white 0.15rem;
+}
+footer {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button-wrapper {
+    position: absolute;
+    right: 18rem;   
+}
